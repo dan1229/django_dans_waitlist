@@ -4,15 +4,39 @@
 -------------------------------------------------------
 ## [Unreleased]
 -----
+### 0.0.2
+
+
+#### improve types?
+
+
+
+#### improve tests?
+
+
+-----
 
 
 INITIAL RELEASE!
+- add actual content/models/tests/etc
+- updre requiremnets
+    - create venv
+    - django
+    - drf
+    - django-dans-notificaitons?
+- update urls
+- update admin
 - update docs
     - docs/
     - readme
 
 
 ### [0.0.1] - 2024-MM-DD
+- Initial release!
+    - Basic `waitlist` app and functionality
+    - Basic models and managers
+    - APIs for adding and removing from waitlist
+    - TESTS TESTS TESTS!!!
 #### TODO
 
 -------------------------------------------------------

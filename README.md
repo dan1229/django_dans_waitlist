@@ -57,7 +57,9 @@ REST_FRAMEWORK = {
 
 ### Available Settings
 
-TODO
+Currently all available settings are optional:
+
+- `TEAM_NAME` - Default team name to use for emails, can be added to message context manually as well still.
 
 
 ## Usage
