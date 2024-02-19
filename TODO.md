@@ -38,6 +38,7 @@ INITIAL RELEASE!
     - Basic models and managers
     - APIs for adding and removing from waitlist
     - TESTS TESTS TESTS!!!
+- Python > 3.10
 #### TODO
 
 -------------------------------------------------------
