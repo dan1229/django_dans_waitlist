@@ -27,6 +27,9 @@ set up coverage
 - badges
 
 
+revisit requirements in setup.cfg
+- django dans?
+
 
 INITIAL RELEASE!
 - remake migrations
