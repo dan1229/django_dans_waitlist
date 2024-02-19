@@ -29,11 +29,6 @@ revisit requirements in setup.cfg
 - django dans?
 
 
-doc clean up
-- update docs
-    - docs/
-    - readme
-
 
 ### [0.0.2] - 2024-02-DD
 - Improved docs
