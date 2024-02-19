@@ -4,7 +4,7 @@
 -------------------------------------------------------
 ## [Unreleased]
 -----
-### 0.0.2
+### 0.0.3
 
 
 #### improve types?
@@ -18,10 +18,11 @@
     - TODO
 
 
-### [0.0.2] - 2024-MM-DD
+### [0.0.3] - 2024-MM-DD
 #### TODO
 
 -----
+### 0.0.2
 
 set up coverage
 - badges
@@ -31,14 +32,20 @@ revisit requirements in setup.cfg
 - django dans?
 
 
-INITIAL RELEASE!
-- remake migrations
--
-- update urls
-- update admin
+doc clean up
 - update docs
     - docs/
     - readme
+
+
+### [0.0.2] - 2024-MM-DD
+#### TODO
+
+
+---
+
+
+INITIAL RELEASE!
 
 
 ### [0.0.1] - 2024-MM-DD
