@@ -1,8 +1,8 @@
 import json
 from ..base import BaseAPITestCase
 from ....views import WaitlistEntryEmailViewSet
-from users.models import User
-from waitlist.models import WaitlistEntry
+from ....models import WaitlistEntry
+from django.contrib.auth import get_user_model
 from django_dans_notifications.models.email import NotificationEmail
 
 """
@@ -18,7 +18,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
         self.view_create = WaitlistEntryEmailViewSet.as_view({"post": "create"})
 
         # create admin user
-        self.admin_user = User.objects.create_user(
+        self.admin_user = get_user_model().objects.create_user(
             email="email@email.com", password="password", is_staff=True
         )
 

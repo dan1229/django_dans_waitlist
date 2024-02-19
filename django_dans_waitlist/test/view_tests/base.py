@@ -27,8 +27,8 @@ class BaseAPITestCase(APITestCase):
 
     # TOKEN FUNCTIONS
 
-    def get_headers(self, user: User) -> str:
+    def get_headers(self, user: Any) -> str:
         return f"Token {self.get_token(user)}"
 
-    def get_token(self, user: User) -> Token:
+    def get_token(self, user: Any) -> Token:
         return Token.objects.get_or_create(user=user)[0]
