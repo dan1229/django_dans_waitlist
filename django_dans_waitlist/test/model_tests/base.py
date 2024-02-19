@@ -9,6 +9,7 @@ from django.test import TestCase
 
 
 class BaseModelTestCase(TestCase):
+    base_username = "test_user"
     base_email = "test@email.com"
     base_password = "12345"
 
@@ -17,6 +18,8 @@ class BaseModelTestCase(TestCase):
 
         # USER 1 ====================================== #
         self.base_user = get_user_model().objects.create_user(
-            email=self.base_email, password=self.base_password
+            username=self.base_username,
+            email=self.base_email,
+            password=self.base_password,
         )
         self.client.force_login(self.base_user)
