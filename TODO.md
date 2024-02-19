@@ -30,6 +30,7 @@
 
 
 ### [0.1.0] - 2024-MM-DD
+- NOTE THIS IS THE VERSION CURRENTLY IN SETUP.CFG
 #### TODO
 
 -------------------------------------------------------
