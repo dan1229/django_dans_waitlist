@@ -1,8 +1,8 @@
 import json
 
-from api.test.base import BaseAPITestCase
-from api.views.waitlist import WaitlistEntryViewSet
-from waitlist.models import WaitlistEntry
+from ..base import BaseAPITestCase
+from ....views import WaitlistEntryViewSet
+from ....models import WaitlistEntry
 
 """
 # =============================================================================================

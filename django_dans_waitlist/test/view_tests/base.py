@@ -11,6 +11,7 @@ from django.contrib.auth import get_user_model
 
 
 class BaseAPITestCase(APITestCase):
+    username = "test"
     email_user = "test@test.com"
     password = "password"
 
@@ -22,7 +23,7 @@ class BaseAPITestCase(APITestCase):
 
         # create user
         self.user = get_user_model().objects.create_user(
-            email=self.email_user, password=self.password
+            username=self.username, email=self.email_user, password=self.password
         )
         self.user_token = Token.objects.create(user=self.user)
 
