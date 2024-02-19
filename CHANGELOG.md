@@ -12,8 +12,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Released]
 
+### [0.0.1] - 2024-02-18
+- Initial release!
+    - Basic `waitlist` app and functionality
+    - Basic models and managers
+    - APIs for adding and removing from waitlist
+    - TESTS TESTS TESTS!!!
+- Python 3.10 or 3.11, Django >= 3.1, < 5.0
 
-TODO
 
 -------------------------------------------------------
 

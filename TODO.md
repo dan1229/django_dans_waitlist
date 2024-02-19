@@ -38,23 +38,7 @@ doc clean up
     - readme
 
 
-### [0.0.2] - 2024-MM-DD
-#### TODO
-
-
----
-
-
-INITIAL RELEASE!
-
-
-### [0.0.1] - 2024-MM-DD
-- Initial release!
-    - Basic `waitlist` app and functionality
-    - Basic models and managers
-    - APIs for adding and removing from waitlist
-    - TESTS TESTS TESTS!!!
-- Python 3.10 or 3.11, Django >= 3.1, < 5.0
+### [0.0.2] - 2024-02-DD
 #### TODO
 
 -------------------------------------------------------
