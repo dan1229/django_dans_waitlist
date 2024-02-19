@@ -69,9 +69,6 @@ TEAM_NAME = "My Team"
 ```
 
 
-## Usage
-
-TODO
 
 ## Docs
 

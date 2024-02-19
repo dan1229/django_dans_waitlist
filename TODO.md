@@ -32,6 +32,7 @@ revisit requirements in setup.cfg
 
 ### [0.0.2] - 2024-02-DD
 - Improved docs
+    - `docs/` and `README.md` updated
 - Package dependencies updated
 #### TODO
 
