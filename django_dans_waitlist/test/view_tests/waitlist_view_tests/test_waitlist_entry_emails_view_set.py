@@ -19,7 +19,10 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
 
         # create admin user
         self.admin_user = get_user_model().objects.create_user(
-            email="email@email.com", password="password", is_staff=True
+            username="admin",
+            email="email@email.com",
+            password="password",
+            is_staff=True,
         )
 
     @staticmethod
@@ -62,7 +65,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
         # confirm status code and data
         self.assertEqual(response.status_code, 403)
         self.assertEqual(
-            json_response["message"],
+            json_response["detail"],
             "You do not have permission to perform this action.",
         )
 

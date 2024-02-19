@@ -5,4 +5,3 @@ django-dans-notifications==1.1.17
 djangorestframework==3.14.0
 pytz==2024.1
 sqlparse==0.4.4
-setuptools==69.1.0 

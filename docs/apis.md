@@ -1,23 +1,12 @@
 # APIs
 
-TODO UPDATE
+There are a couple API endpoints available for different front ends to interact with notifications.
 
-There are numerous API endpoints available for different front ends to interact with notifications.
-
-## Emails
-- `/notifications/emails/`
-  - GET     - list
-  - GET     - retrieve (@param id)
+## Waitlist Entries
+- `/entries/`
+  - POST  - create (@param email)
 
 ## Basic
-- `/notifications/basic/`
-  - GET     - list
-  - GET     - retrieve (@param id)
-  - POST    - create (@param message)
-  - PATCH   - partial_update (@param read)
+- `/entries/emails/`
+  - POST    - create (@param message, @param subject (optional))
 
-## Push
-- `/notifications/push/`
-  - GET     - list
-  - GET     - retrieve (@param id)
-  - POST    - create (@param message)

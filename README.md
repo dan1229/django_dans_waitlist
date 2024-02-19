@@ -69,13 +69,9 @@ TEAM_NAME = "My Team"
 ```
 
 
-## Usage
-
-TODO
 
 ## Docs
 
-TODO - which of these are still relevant?
 #### [Model docs](https://github.com/dan1229/django_dans_waitlist/tree/main/docs/models.md).
 
 #### [API docs](https://github.com/dan1229/django_dans_waitlist/tree/main/docs/apis.md).
