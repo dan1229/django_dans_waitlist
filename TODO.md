@@ -37,7 +37,7 @@ INITIAL RELEASE!
     - Basic models and managers
     - APIs for adding and removing from waitlist
     - TESTS TESTS TESTS!!!
-- Python >= 3.10, Django >= 3.1
+- Python 3.10 or 3.11, Django >= 3.1
 #### TODO
 
 -------------------------------------------------------
