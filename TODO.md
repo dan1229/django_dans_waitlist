@@ -4,6 +4,15 @@
 -------------------------------------------------------
 ## [Unreleased]
 -----
+### Improvements
+
+
+#### python 3.12 support
+- idk try adding again
+
+
+
+-----
 ### 0.1.0
 
 
@@ -12,6 +21,13 @@
 - add ci stage to check for types?
 - do same for django dans notifications?
 
+
+
+#### more badges
+- python/django versions
+- https://pypi.org/project/django-admin-interface/
+    - more inspo
+- add to django dans notifications
 
 
 
