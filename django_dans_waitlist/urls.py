@@ -18,6 +18,6 @@ from .views import (
 
 # Create a router and register our view sets with it
 router = DefaultRouter()
-router.register(r"waitlist/entries", WaitlistEntryViewSet)
-router.register(r"waitlist/entries/emails", WaitlistEntryEmailViewSet)
+router.register(r"entries", WaitlistEntryViewSet)
+router.register(r"entries/emails", WaitlistEntryEmailViewSet)
 urlpatterns = router.urls
