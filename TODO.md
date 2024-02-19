@@ -24,9 +24,6 @@
 -----
 ### 0.0.2
 
-set up coverage
-- badges
-
 
 revisit requirements in setup.cfg
 - django dans?
@@ -39,6 +36,8 @@ doc clean up
 
 
 ### [0.0.2] - 2024-02-DD
+- Improved docs
+- Package dependencies updated
 #### TODO
 
 -------------------------------------------------------
