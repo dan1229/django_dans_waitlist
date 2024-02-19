@@ -16,6 +16,10 @@
 
 -----
 
+set up coverage
+- badges
+
+
 
 INITIAL RELEASE!
 - update requiremnets
