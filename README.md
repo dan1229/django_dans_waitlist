@@ -8,7 +8,7 @@
 
 A Django app to handle waitlist and basic functionality.
 
-Support for `Waitlis` and `WaitlistEntry` models, as well as a `WaitlistManager` to handle common operations.
+Support for `Waitlist` and `WaitlistEntry` models, as well as a `WaitlistManager` to handle common operations.
 
 ## Quick start
 
@@ -39,8 +39,8 @@ path("api/waitlist/", include("django_dans_waitlist.urls")),
 
 ### Requirements
 
-- Python 3.0 or higher
-- Django 3.0 or higher
+- Python 3.10 - 3.11
+- Django 3.1 or higher
 - Django Rest Framework
   - **NOTE:** not only must you have this installed, you must have set `DEFAULT_AUTHENTICATION_CLASSES` and `DEFAULT_PAGINATION_CLASS` in your `settings.py` to work with the APIs properly. An example config would be:
 
@@ -57,7 +57,16 @@ REST_FRAMEWORK = {
 
 ### Available Settings
 
-TODO
+Currently all available settings are optional:
+
+- `TEAM_NAME` - Default team name to use for emails, can be added to message context manually as well still.
+
+
+Add these to your `settings.py` file to customize the app's behavior like so:
+
+```python
+TEAM_NAME = "My Team"
+```
 
 
 ## Usage

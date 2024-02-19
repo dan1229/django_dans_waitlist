@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <h3 size="xlarge">Hey there from the {project_name_regular_case} team,</h3>
+    </div>
+    <br />
+    {% block content %} {% endblock %}
+    <br />
+    <div>
+      <h3>Thank you for using {project_name_regular_case}!</h3>
+      {% include './widgets/signature.html' %}
+    </div>
+  </body>
+</html>
