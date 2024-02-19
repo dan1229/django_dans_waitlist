@@ -8,7 +8,7 @@
 
 A Django app to handle waitlist and basic functionality.
 
-Support for `Waitlis` and `WaitlistEntry` models, as well as a `WaitlistManager` to handle common operations.
+Support for `Waitlist` and `WaitlistEntry` models, as well as a `WaitlistManager` to handle common operations.
 
 ## Quick start
 

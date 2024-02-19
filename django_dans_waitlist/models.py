@@ -37,7 +37,6 @@ class WaitlistEntry(AbstractBaseModel):
         return f"Waitlist Entry: {self.email}"
 
     class Meta:
-        app_label = "waitlist"
         ordering = ["email"]
         verbose_name = "Waitlist Entry"
         verbose_name_plural = "Waitlist Entries"

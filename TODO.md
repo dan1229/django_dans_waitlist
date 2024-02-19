@@ -22,11 +22,6 @@ set up coverage
 
 
 INITIAL RELEASE!
-- update requiremnets
-    - create venv
-    - django
-    - drf
-    - django-dans-notificaitons?
 - remake migrations
 -
 - update urls
