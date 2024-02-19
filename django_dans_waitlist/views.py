@@ -13,7 +13,7 @@ from django.conf import settings
 from django_dans_notifications.models.email import NotificationEmail
 from rest_framework import status
 import re
-from api_response_handler import ApiResponseHandler
+from .api_response_handler import ApiResponseHandler
 
 
 # =============================== #
@@ -73,27 +73,38 @@ class WaitlistEntryEmailViewSet(viewsets.GenericViewSet):
         """
         message = request.data.get("message", "")
         subject = request.data.get("subject", None)
+
         if message == "":
             return self.response_handler.response_error(
                 error_fields={"message": ["'Message' cannot be blank or missing."]}
             )
+
+        team_name = hasattr(settings, "TEAM_NAME")
         if subject is None or subject == "None":
-            subject = "Waitlist Update from {project_name_regular_case}"
+            if team_name:
+                subject = f"Waitlist Update from {settings.TEAM_NAME}"
+            else:
+                subject = "Waitlist Update from the Team"
 
         # get all emails
         waitlist_emails_list = []
         for waitlist_entry in WaitlistEntry.objects.all():
             waitlist_emails_list.append(waitlist_entry.email)
 
+        # create context
+        context = {"message": message}
+
+        # add team name to context
+        if team_name and context:
+            if "team_name" not in context:
+                context["team_name"] = settings.TEAM_NAME
         # send email
         notification_email = NotificationEmail.objects.send_email(
-            subject,
-            "emails/waitlist-email.html",
-            settings.DEFAULT_FROM_EMAIL,
-            waitlist_emails_list,
-            {
-                "message": message,
-            },
+            subject=subject,
+            template="emails/waitlist-email.html",
+            sender=settings.DEFAULT_FROM_EMAIL,
+            recipients=waitlist_emails_list,
+            context=context,
         )
 
         if not notification_email.sent_successfully:

@@ -18,14 +18,13 @@
 
 
 INITIAL RELEASE!
-- response handler?
-    - should i do the helpers like django dans?
-- updre requiremnets
+- update requiremnets
     - create venv
     - django
     - drf
     - django-dans-notificaitons?
 - remake migrations
+-
 - update urls
 - update admin
 - update docs
