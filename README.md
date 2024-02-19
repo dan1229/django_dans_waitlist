@@ -40,7 +40,7 @@ path("api/waitlist/", include("django_dans_waitlist.urls")),
 ### Requirements
 
 - Python 3.10 or higher
-- Django 3.0 or higher
+- Django 3.1 or higher
 - Django Rest Framework
   - **NOTE:** not only must you have this installed, you must have set `DEFAULT_AUTHENTICATION_CLASSES` and `DEFAULT_PAGINATION_CLASS` in your `settings.py` to work with the APIs properly. An example config would be:
 
