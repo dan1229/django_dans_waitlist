@@ -1,6 +1,6 @@
 import json
-from api.test.base import BaseAPITestCase
-from api.views.waitlist import WaitlistEntryEmailViewSet
+from ..base import BaseAPITestCase
+from ....views import WaitlistEntryEmailViewSet
 from users.models import User
 from waitlist.models import WaitlistEntry
 from django_dans_notifications.models.email import NotificationEmail

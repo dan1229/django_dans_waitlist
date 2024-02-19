@@ -2,19 +2,18 @@ from django.core.exceptions import ValidationError
 from rest_framework.exceptions import ValidationError as DRFValidationError
 from django.db import IntegrityError
 from rest_framework import viewsets
-from api.api_response_handler import ApiResponseHandler
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
-from api.serializers.waitlist import WaitlistEntrySerializer
-from api.permissions.base import AdminOnly
-from core.regex import REGEX_EMAIL
-from waitlist.models import WaitlistEntry
-
+from .serializers.waitlist import WaitlistEntrySerializer
+from .permissions import AdminOnly
+from .regex import REGEX_EMAIL
+from .models import WaitlistEntry
 from django.conf import settings
 from django_dans_notifications.models.email import NotificationEmail
 from rest_framework import status
 import re
+from api_response_handler import ApiResponseHandler
 
 
 # =============================== #

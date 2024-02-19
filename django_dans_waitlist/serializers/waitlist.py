@@ -1,5 +1,5 @@
-from api.serializers.base import BaseSerializer
-from waitlist.models import WaitlistEntry
+from .base import BaseSerializer
+from ..models import WaitlistEntry
 
 
 #

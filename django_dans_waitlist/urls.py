@@ -4,7 +4,10 @@
 #  Please do NOT use, edit, distribute, or otherwise use this code without consent.
 #  For questions, comments, concerns, and more -> dnaz@danielnazarian.com
 from rest_framework.routers import DefaultRouter
-from views.waitlist import WaitlistEntryEmailViewSet, WaitlistEntryViewSet
+from .views import (
+    WaitlistEntryEmailViewSet,
+    WaitlistEntryViewSet,
+)
 
 
 """

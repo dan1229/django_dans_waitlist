@@ -18,7 +18,8 @@
 
 
 INITIAL RELEASE!
-- add actual content/models/tests/etc
+- response handler?
+    - should i do the helpers like django dans?
 - updre requiremnets
     - create venv
     - django

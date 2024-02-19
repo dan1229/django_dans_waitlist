@@ -1,5 +1,5 @@
-from waitlist.models import WaitlistEntry
-from core.test.model_tests.base import BaseModelTestCase
+from ....models import WaitlistEntry
+from ..base import BaseModelTestCase
 
 """
 # ========================================================================= #
