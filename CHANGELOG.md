@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Released]
 
+### [0.0.2] - 2024-02-18
+- Improved docs
+    - `docs/` and `README.md` updated
+- Fixed python tests not all running!
+
+
 ### [0.0.1] - 2024-02-18
 - Initial release!
     - Basic `waitlist` app and functionality

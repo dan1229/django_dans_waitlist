@@ -29,19 +29,7 @@
     - update django dans notifications if so
 
 
-### [0.0.3] - 2024-MM-DD
-#### TODO
-
------
-### 0.0.2
-
-
-
-
-### [0.0.2] - 2024-02-18
-- Improved docs
-    - `docs/` and `README.md` updated
-- Fixed python tests not all running!
+### [0.1.0] - 2024-MM-DD
 #### TODO
 
 -------------------------------------------------------
