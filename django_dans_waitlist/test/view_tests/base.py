@@ -1,3 +1,4 @@
+from typing import Any
 from rest_framework.authtoken.models import Token
 from rest_framework.test import APITestCase, APIRequestFactory
 from django.contrib.auth import get_user_model
