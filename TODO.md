@@ -24,6 +24,7 @@ INITIAL RELEASE!
     - django
     - drf
     - django-dans-notificaitons?
+- remake migrations
 - update urls
 - update admin
 - update docs
