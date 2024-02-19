@@ -24,7 +24,9 @@
 
 
 #### revisit requirements in setup.cfg
-- django dans?
+- django dans cant install in ci?
+- is there a bigger issue with the way i handle deps?
+    - update django dans notifications if so
 
 
 ### [0.0.3] - 2024-MM-DD
@@ -39,7 +41,7 @@
 ### [0.0.2] - 2024-02-18
 - Improved docs
     - `docs/` and `README.md` updated
-- Fixed python tests not all running
+- Fixed python tests not all running!
 #### TODO
 
 -------------------------------------------------------
