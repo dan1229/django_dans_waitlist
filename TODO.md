@@ -17,15 +17,24 @@
 - add mypy?
 - add ci stage to check for types?
 - do same for django dans notifications?
+- typed
 
 
 
-#### more badges
-- python/django versions
-- https://pypi.org/project/django-admin-interface/
-    - more inspo
-- add to django dans notifications
+#### improve docs
+- improve readme
+- revisit other docs
+- more badges
+    - python/django versions
+    - https://pypi.org/project/django-admin-interface/
+        - more inspo
+    - add to django dans notifications
 
+
+    
+#### django dans api toolkit
+- add dep for it
+- remove local code
 
 
 #### improve tests
@@ -35,18 +44,9 @@
     - TODO
 
 
-#### python 3.12 support and django 5.0
-- idk try adding again
-
-
-#### revisit requirements in setup.cfg
-- django dans cant install in ci?
-- is there a bigger issue with the way i handle deps?
-    - update django dans notifications if so
-
-
-### [1.0.0] - 2024-MM-DD
-- NOTE THIS IS THE VERSION CURRENTLY IN SETUP.CFG
+### [1.0.0] - 2024-07-DD
+- Added support for Python 3.12 and Django 5.0
+    - Updated CI as well
 #### TODO
 
 -------------------------------------------------------
