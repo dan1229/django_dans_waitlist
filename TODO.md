@@ -7,6 +7,18 @@
 ### Improvements
 
 
+#### email all functionality?
+- too powerful?
+
+
+#### something something webhooks?
+
+
+#### analytics of some sort?
+
+
+#### integrations with hubspot or something?
+
 
 -----
 ### 1.0.0
@@ -15,20 +27,13 @@
 
 #### improve docs
 - improve readme
+    - add mypy notes and badge
 - revisit other docs
 - more badges
     - python/django versions
     - https://pypi.org/project/django-admin-interface/
         - more inspo
-    - add to django dans notifications
-
-
-    
-#### add type support / stubs
-- add mypy
-- add ci stage to check for types?
-- py.typed and thing in setup.cfg
-- update docs
+    - mypy
 
 
 
@@ -40,7 +45,12 @@
     - Coverage at TODO%
 - Added Django Dans API Toolkit
     - Allowed for lots of code clean up!
-#### TODO
+- Added type stubs and support
+    - CI checks for types
+- General CI clean up
+- Lint improvements as well
+- General docs clean up
+    - More badges!
 
 -------------------------------------------------------
 

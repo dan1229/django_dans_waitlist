@@ -107,7 +107,7 @@ class WaitlistEntryEmailViewSet(viewsets.GenericViewSet):
         # get all emails
         waitlist_emails_list = []
         for waitlist_entry in WaitlistEntry.objects.all():
-            waitlist_emails_list.append(waitlist_entry.email)
+            waitlist_emails_list.append(waitlist_entry.email)  # type: ignore[attr-defined]
 
         # create context
         context = {"message": message}

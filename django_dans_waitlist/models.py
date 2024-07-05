@@ -1,5 +1,5 @@
 import uuid
-
+from typing import List
 from django.db import models
 
 """
@@ -10,16 +10,15 @@ from django.db import models
 
 
 class AbstractBaseModel(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-
-    datetime_created = models.DateTimeField(auto_now_add=True, editable=False)
-    datetime_modified = models.DateTimeField(auto_now=True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)  # type: ignore[var-annotated]
+    datetime_created = models.DateTimeField(auto_now_add=True, editable=False)  # type: ignore[var-annotated]
+    datetime_modified = models.DateTimeField(auto_now=True)  # type: ignore[var-annotated]
 
     class Meta:
         abstract = True
-        ordering = ["datetime_created"]
+        ordering: List[str] = ["datetime_created"]
 
-    def __str__(self):
+    def __str__(self) -> str:
         return "Abstract Base Model"
 
 
@@ -31,12 +30,12 @@ class AbstractBaseModel(models.Model):
 
 
 class WaitlistEntry(AbstractBaseModel):
-    email = models.EmailField(unique=True)
+    email = models.EmailField(unique=True)  # type: ignore[var-annotated]
 
     def __str__(self) -> str:
         return f"Waitlist Entry: {self.email}"
 
     class Meta:
-        ordering = ["email"]
-        verbose_name = "Waitlist Entry"
-        verbose_name_plural = "Waitlist Entries"
+        ordering: List[str] = ["email"]
+        verbose_name: str = "Waitlist Entry"
+        verbose_name_plural: str = "Waitlist Entries"
