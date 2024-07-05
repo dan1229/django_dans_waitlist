@@ -28,6 +28,7 @@
 - add mypy
 - add ci stage to check for types?
 - py.typed and thing in setup.cfg
+- update docs
 
 
 
