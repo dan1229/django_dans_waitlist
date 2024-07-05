@@ -27,7 +27,6 @@
 #### add type support / stubs
 - add mypy
 - add ci stage to check for types?
-- py.typed and thing in setup.cfg
 - update docs
 
 
@@ -40,6 +39,8 @@
     - Coverage at TODO%
 - Added Django Dans API Toolkit
     - Allowed for lots of code clean up!
+- Added type stubs and support
+    - CI checks for types
 #### TODO
 
 -------------------------------------------------------
