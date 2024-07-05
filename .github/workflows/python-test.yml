@@ -34,7 +34,7 @@ jobs:
         pip install -e .
         pip install -U Django==${{ matrix.django_version }}
         pip install -r requirements.txt
-        pip install coverage==6.4  # Install coverage
+        pip install -r requirements-dev.txt
 
     - name: Run tests
       run: python -m coverage run runtests.py
