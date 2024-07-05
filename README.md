@@ -12,13 +12,8 @@
 [![Downloads](https://static.pepy.tech/badge/django-dans-waitlist/month)](https://pepy.tech/project/django-dans-waitlist)
 [![GitHub stars](https://img.shields.io/github/stars/dan1229/django-dans-waitlist?logo=github&style=flat)](https://github.com/dan1229/django-dans-waitlist/stargazers)
 [![License](https://img.shields.io/pypi/l/django-dans-waitlist.svg?color=blue)](https://github.com/dan1229/django-dans-waitlist/blob/main/LICENSE.txt)
-[![Pre-commit](https://results.pre-commit.ci/badge/github/dan1229/django-dans-waitlist/main.svg)](https://results.pre-commit.ci/latest/github/dan1229/django-dans-waitlist/main)
-[![Build](https://img.shields.io/github/actions/workflow/status/dan1229/django-dans-waitlist/test-package.yml?branch=main&label=build&logo=github)](https://github.com/dan1229/django-dans-waitlist)
-[![Code coverage](https://img.shields.io/codecov/c/gh/dan1229/django-dans-waitlist?logo=codecov)](https://codecov.io/gh/dan1229/django-dans-waitlist)
 [![Codacy grade](https://img.shields.io/codacy/grade/21cb657283c04e70b56fb935277a1ad1?logo=codacy)](https://www.codacy.com/app/dan1229/django-dans-waitlist)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/dan1229/django-dans-waitlist?logo=code-climate)](https://codeclimate.com/github/dan1229/django-dans-waitlist/)
 [![Code style](https://img.shields.io/badge/code%20style-black-000000.svg?logo=python&logoColor=black)](https://github.com/psf/black)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Description
 
