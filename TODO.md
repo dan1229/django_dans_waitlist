@@ -32,10 +32,6 @@
 
 
 
-#### django dans api toolkit
-
-
-
 
 ### [1.0.0] - 2024-07-04
 - Added support for Python 3.12 and Django 5.0
