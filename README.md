@@ -4,11 +4,19 @@
 [![Test](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml)
 [![Types](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml)
 [![codecov](https://codecov.io/gh/dan1229/django_dans_waitlist/branch/main/graph/badge.svg?token=TL09HDQWBJ)](https://codecov.io/gh/dan1229/django_dans_waitlist)
-
-
-[![Python Versions](https://img.shields.io/pypi/pyversions/django-dans-waitlist)](https://pypi.org/project/django-dans-waitlist/)
-[![Django Versions](https://img.shields.io/pypi/djversions/django-dans-waitlist)](https://pypi.org/project/django-dans-waitlist/)
-[![PyPI Version](https://img.shields.io/pypi/v/django-dans-waitlist)](https://pypi.org/project/django-dans-waitlist/)
+[![](https://img.shields.io/pypi/pyversions/django-dans-waitlist.svg?color=3776AB&logo=python&logoColor=white)](https://www.python.org/)
+[![](https://img.shields.io/pypi/djversions/django-dans-waitlist?color=0C4B33&logo=django&logoColor=white&label=django)](https://www.djangoproject.com/)
+[![](https://img.shields.io/pypi/v/django-dans-waitlist.svg?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/django-dans-waitlist/)
+[![](https://static.pepy.tech/badge/django-dans-waitlist/month)](https://pepy.tech/project/django-dans-waitlist)
+[![](https://img.shields.io/github/stars/dan1229/django-dans-waitlist?logo=github&style=flat)](https://github.com/dan1229/django-dans-waitlist/stargazers)
+[![](https://img.shields.io/pypi/l/django-dans-waitlist.svg?color=blue)](https://github.com/dan1229/django-dans-waitlist/blob/main/LICENSE.txt)
+[![](https://results.pre-commit.ci/badge/github/dan1229/django-dans-waitlist/main.svg)](https://results.pre-commit.ci/latest/github/dan1229/django-dans-waitlist/main)
+[![](https://img.shields.io/github/actions/workflow/status/dan1229/django-dans-waitlist/test-package.yml?branch=main&label=build&logo=github)](https://github.com/dan1229/django-dans-waitlist)
+[![](https://img.shields.io/codecov/c/gh/dan1229/django-dans-waitlist?logo=codecov)](https://codecov.io/gh/dan1229/django-dans-waitlist)
+[![](https://img.shields.io/codacy/grade/21cb657283c04e70b56fb935277a1ad1?logo=codacy)](https://www.codacy.com/app/dan1229/django-dans-waitlist)
+[![](https://img.shields.io/codeclimate/maintainability/dan1229/django-dans-waitlist?logo=code-climate)](https://codeclimate.com/github/dan1229/django-dans-waitlist/)
+[![](https://img.shields.io/badge/code%20style-black-000000.svg?logo=python&logoColor=black)](https://github.com/psf/black)
+[![](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Description
 
