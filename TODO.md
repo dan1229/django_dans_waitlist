@@ -32,8 +32,6 @@
 
 
 #### django dans api toolkit
-- add dep for it
-- remove local code
 
 
 
