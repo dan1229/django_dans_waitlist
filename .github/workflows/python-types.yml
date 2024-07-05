@@ -35,4 +35,4 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Run MyPy
-        run: mypy . -config=mypy.ini # Run MyPy check on the entire project
+        run: mypy . --config-file mypy.ini # Run MyPy check on the entire project
