@@ -36,6 +36,7 @@
 - Added type stubs and support
     - CI checks for types
 - General CI clean up
+- Lint improvements as well
 - General docs clean up
     - More badges!
 

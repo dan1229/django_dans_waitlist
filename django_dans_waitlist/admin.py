@@ -1,4 +1,3 @@
-from typing import Any
 from django.contrib import admin
 from .models import WaitlistEntry
 
@@ -6,7 +5,7 @@ from .models import WaitlistEntry
 #
 # WAITLIST ENTRY ========================= #
 #
-class WaitlistEntryAdmin(admin.ModelAdmin[Any]):
+class WaitlistEntryAdmin(admin.ModelAdmin):
     list_display = (
         "email",
         "datetime_created",
