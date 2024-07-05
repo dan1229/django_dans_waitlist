@@ -46,7 +46,7 @@
 
 
 ### [1.0.0] - 2024-MM-DD
-- NOTE THIS IS THE VERSION CURRENTLY IN SETUP.CFG
+- Added support for Python 3.12 and Django 5.0
 #### TODO
 
 -------------------------------------------------------
