@@ -11,6 +11,14 @@
 - too powerful?
 
 
+#### something something webhooks?
+
+
+#### analytics of some sort?
+
+
+#### integrations with hubspot or something?
+
 
 -----
 ### 1.0.0
