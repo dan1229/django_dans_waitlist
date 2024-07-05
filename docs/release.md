@@ -1,30 +1,45 @@
-## Packaging
+# Release Guide
 
-TODO UPDATE
+This guide provides instructions on how to package and release the Django Dans Waitlist package.
+
+## Packaging
 
 **IMPORTANT:** You MUST update your version number in `setup.cfg` before anything else as this is what actually determines the version!
 
-### CD
+### Continuous Deployment (CD)
 
-To release automatically - go to GitHub Actions and simply run the 'release' phase.
+To release automatically, follow these steps:
 
-It should ask for a version number of the form "X.X.X" and handle everything.
+1. **Update Version Number**: Ensure the version number in `setup.cfg` is updated.
+2. **Run Release Phase**: Go to GitHub Actions and run the 'release' phase.
+3. **Provide Version Number**: It will ask for a version number of the form "X.X.X" and handle everything.
 
-**NOTE:** even when releasing via CD, you MUST still update your version number in `setup.cfg`!
+**NOTE:** Even when releasing via CD, you MUST still update your version number in `setup.cfg`!
 
-### Manual
+### Manual Release
 
-To build run:
+To manually build and release the package, follow these steps:
+
+1. **Update Version Number**: Ensure the version number in `setup.cfg` is updated.
+
+2. **Build the Package**: Run the following commands to build the package:
 
 ```bash
 python setup.py sdist
 python setup.py bdist_wheel
 ```
 
-To release run:
+3. **Release the Package**: Run the following command to upload the package to PyPI:
 
 ```bash
 python3 -m twine upload --repository pypi dist/*
 ```
 
-This expects you to have the proper credentials in your `$HOME/.pypirc` file
+This expects you to have the proper credentials in your `$HOME/.pypirc` file.
+
+
+-------------------------------------------------------
+
+##### [https://danielnazarian.com](https://danielnazarian.com)
+
+##### Copyright 2024 © Daniel Nazarian.
