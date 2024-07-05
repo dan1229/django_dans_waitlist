@@ -97,7 +97,7 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
             json_response["error_fields"]["email"][0],
             "This field is required.",
         )
-        self.assertEqual(json_response["message"], "Error. Please try again later.")
+        self.assertEqual(json_response["message"], "Email is required.")
 
     def test_create_waitlist_entry_empty_email(self) -> None:
         # parameters
@@ -115,4 +115,4 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
             json_response["error_fields"]["email"][0],
             "This field may not be blank.",
         )
-        self.assertEqual(json_response["message"], "Error. Please try again later.")
+        self.assertEqual(json_response["message"], "'Email' cannot be blank.")
