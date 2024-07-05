@@ -7,9 +7,6 @@
 ### Improvements
 
 
-#### email all functionality?
-- too powerful?
-
 
 #### something something webhooks?
 
@@ -21,23 +18,15 @@
 
 
 -----
-### 1.0.0
+### 1.1.0
 
 
+#### email all functionality?
+- too powerful?
 
-### [1.0.0] - 2024-07-05
-- Added support for Python 3.12 and Django 5.0
-    - Updated CI as well
-- Improved tests!
-    - Coverage at TODO%
-- Added Django Dans API Toolkit
-    - Allowed for lots of code clean up!
-- Added type stubs and support
-    - CI checks for types
-- General CI clean up
-- Lint improvements as well
-- General docs clean up
-    - More badges!
+
+### [1.1.0] - 2024-MM-DD
+- TODO
 
 -------------------------------------------------------
 
