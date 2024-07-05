@@ -22,7 +22,7 @@ class BaseAPITestCase(APITestCase):
         self.factory = APIRequestFactory()
 
         # create user
-        self.user = get_user_model().objects.create_user(
+        self.user = get_user_model().objects.create(
             username=self.username, email=self.email_user, password=self.password
         )
         self.user_token = Token.objects.create(user=self.user)

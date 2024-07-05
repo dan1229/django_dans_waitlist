@@ -1,4 +1,5 @@
 import json
+from typing import Any, Dict
 
 from ..base import BaseAPITestCase
 from ....views import WaitlistEntryViewSet
@@ -35,7 +36,7 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -54,7 +55,7 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -73,7 +74,7 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -83,12 +84,12 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
 
     def test_create_waitlist_entry_missing_email(self) -> None:
         # parameters
-        form_data = {}
+        form_data: Dict[Any, Any] = {}
 
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -106,7 +107,7 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data

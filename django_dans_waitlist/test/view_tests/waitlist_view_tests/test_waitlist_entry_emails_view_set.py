@@ -18,7 +18,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
         self.view_create = WaitlistEntryEmailViewSet.as_view({"post": "create"})
 
         # create admin user
-        self.admin_user = get_user_model().objects.create_user(
+        self.admin_user = get_user_model().objects.create(
             username="admin",
             email="email@email.com",
             password="password",
@@ -43,7 +43,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
 
         # confirm status code and data
         self.assertEqual(response.status_code, 401)
@@ -59,7 +59,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -80,7 +80,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -99,7 +99,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -117,7 +117,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -142,7 +142,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -167,7 +167,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -192,7 +192,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
@@ -224,7 +224,7 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
             data=form_data,
         )
         response = self.view_create(request)
-        response.render()
+        response.render()  # type: ignore[attr-defined]
         json_response = json.loads(response.content)
 
         # confirm status code and data
