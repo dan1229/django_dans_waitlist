@@ -122,7 +122,9 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
 
         # confirm status code and data
         self.assertEqual(response.status_code, 400)
-        self.assertEqual(json_response["message"], "Error. Please try again later.")
+        self.assertEqual(
+            json_response["message"], "'Message' cannot be blank or missing."
+        )
         self.assertEqual(
             json_response["error_fields"]["message"][0],
             "'Message' cannot be blank or missing.",
@@ -145,7 +147,9 @@ class TestWaitlistEntryEmailViewSet(BaseAPITestCase):
 
         # confirm status code and data
         self.assertEqual(response.status_code, 400)
-        self.assertEqual(json_response["message"], "Error. Please try again later.")
+        self.assertEqual(
+            json_response["message"], "'Message' cannot be blank or missing."
+        )
         self.assertEqual(
             json_response["error_fields"]["message"][0],
             "'Message' cannot be blank or missing.",

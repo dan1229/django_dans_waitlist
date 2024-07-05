@@ -28,21 +28,18 @@
 - add mypy
 - add ci stage to check for types?
 - py.typed and thing in setup.cfg
-
-
-
-#### django dans api toolkit
-- add dep for it
-- remove local code
+- update docs
 
 
 
 
-### [1.0.0] - 2024-07-DD
+### [1.0.0] - 2024-07-04
 - Added support for Python 3.12 and Django 5.0
     - Updated CI as well
 - Improved tests!
     - Coverage at TODO%
+- Added Django Dans API Toolkit
+    - Allowed for lots of code clean up!
 #### TODO
 
 -------------------------------------------------------

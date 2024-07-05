@@ -13,7 +13,7 @@ from django.conf import settings
 from django_dans_notifications.models.email import NotificationEmail
 from rest_framework import status
 import re
-from .api_response_handler import ApiResponseHandler
+from django_dans_api_toolkit.api_response_handler import ApiResponseHandler
 
 
 # =============================== #
@@ -116,6 +116,7 @@ class WaitlistEntryEmailViewSet(viewsets.GenericViewSet):
         if team_name and context:
             if "team_name" not in context:
                 context["team_name"] = settings.TEAM_NAME
+
         # send email
         notification_email = NotificationEmail.objects.send_email(
             subject=subject,
