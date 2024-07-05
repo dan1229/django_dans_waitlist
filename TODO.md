@@ -25,8 +25,6 @@
 
 
 
-
-
 ### [1.0.0] - 2024-07-05
 - Added support for Python 3.12 and Django 5.0
     - Updated CI as well
