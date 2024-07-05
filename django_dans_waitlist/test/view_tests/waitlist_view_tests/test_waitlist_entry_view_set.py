@@ -44,15 +44,12 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
             json_response["error_fields"]["email"][0],
             "Waitlist Entry with this email already exists.",
         )
-        self.assertEqual(json_response["message"], "Error. Please try again later.")
+        self.assertEqual(json_response["message"], "Error adding to the waitlist.")
 
     def test_create_waitlist_entry_invalid_email(self) -> None:
         # parameters
         email = "invalidemail"
         form_data = {"email": email}
-
-        # create waitlist entry
-        WaitlistEntry.objects.create(email=email)
 
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
@@ -66,7 +63,7 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
             json_response["error_fields"]["email"][0],
             "Invalid email format.",
         )
-        self.assertEqual(json_response["message"], "Error. Please try again later.")
+        self.assertEqual(json_response["message"], "Invalid email format.")
 
     def test_create_waitlist_entry_valid(self) -> None:
         # parameters
@@ -80,5 +77,42 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         json_response = json.loads(response.content)
 
         # confirm status code and data
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 201)
         self.assertEqual(json_response["message"], "Added to the waitlist.")
+        self.assertEqual(json_response["results"]["email"], email)
+
+    def test_create_waitlist_entry_missing_email(self) -> None:
+        # parameters
+        form_data = {}
+
+        # make api request
+        request = self.factory.post(self.get_url(), data=form_data)
+        response = self.view_create(request)
+        response.render()
+        json_response = json.loads(response.content)
+
+        # confirm status code and data
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(
+            json_response["error_fields"]["email"][0],
+            "Email is required.",
+        )
+        self.assertEqual(json_response["message"], "Email is required.")
+
+    def test_create_waitlist_entry_empty_email(self) -> None:
+        # parameters
+        form_data = {"email": ""}
+
+        # make api request
+        request = self.factory.post(self.get_url(), data=form_data)
+        response = self.view_create(request)
+        response.render()
+        json_response = json.loads(response.content)
+
+        # confirm status code and data
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(
+            json_response["error_fields"]["email"][0],
+            "'Email' cannot be blank.",
+        )
+        self.assertEqual(json_response["message"], "'Email' cannot be blank.")

@@ -34,9 +34,25 @@ class WaitlistEntryViewSet(viewsets.GenericViewSet):
         Required fields:
         - email (str): The email of the user to add to the waitlist.
         """
-        if not re.match(REGEX_EMAIL, request.data.get("email", "")):
+        email = request.data.get("email", None)
+        if email is None:
+            error_message = "Email is required."
+            error_fields = {"email": [error_message]}
             return self.response_handler.response_error(
-                error_fields={"email": ["Invalid email format."]}
+                message=error_message,
+                error_fields=error_fields,
+            )
+
+        if not re.match(REGEX_EMAIL, email):
+            if email == "":
+                error_message = "'Email' cannot be blank."
+                error_fields = {"email": [error_message]}
+            else:
+                error_message = "Invalid email format."
+                error_fields = {"email": [error_message]}
+            return self.response_handler.response_error(
+                message=error_message,
+                error_fields=error_fields,
             )
 
         try:
@@ -44,11 +60,13 @@ class WaitlistEntryViewSet(viewsets.GenericViewSet):
             serializer.is_valid(raise_exception=True)
             serializer.save()
             return self.response_handler.response_success(
-                message="Added to the waitlist.", results=serializer.data
+                message="Added to the waitlist.", results=serializer.data, status=201
             )
         except (ValidationError, DRFValidationError, IntegrityError) as e:
             return self.response_handler.response_error(
-                error=e, error_fields=serializer.errors
+                message="Error adding to the waitlist.",
+                error=e,
+                error_fields=serializer.errors,
             )
 
 

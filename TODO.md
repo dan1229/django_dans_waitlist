@@ -13,14 +13,6 @@
 
 
 
-#### improve types?
-- add mypy?
-- add ci stage to check for types?
-- do same for django dans notifications?
-- typed
-
-
-
 #### improve docs
 - improve readme
 - revisit other docs
@@ -32,21 +24,25 @@
 
 
     
+#### add type support / stubs
+- add mypy
+- add ci stage to check for types?
+- py.typed and thing in setup.cfg
+
+
+
 #### django dans api toolkit
 - add dep for it
 - remove local code
 
 
-#### improve tests
--  model tests
-    - TODO
-- api tests
-    - TODO
 
 
 ### [1.0.0] - 2024-07-DD
 - Added support for Python 3.12 and Django 5.0
     - Updated CI as well
+- Improved tests!
+    - Coverage at TODO%
 #### TODO
 
 -------------------------------------------------------
