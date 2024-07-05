@@ -5,7 +5,7 @@ from .models import WaitlistEntry
 #
 # WAITLIST ENTRY ========================= #
 #
-class WaitlistEntryAdmin(admin.ModelAdmin):
+class WaitlistEntryAdmin(admin.ModelAdmin):  # type: ignore[type-arg]
     list_display = (
         "email",
         "datetime_created",
