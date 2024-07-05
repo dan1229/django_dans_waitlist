@@ -1,9 +1,8 @@
 # Django Dans Waitlist
 
-[![Lint](https://github.com/dan1229/django_dans_waitlist/actions/workflows/lint.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/lint.yml)
-[![Python - Lint](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-lint.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-lint.yml)
-[![Python - Test](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml)
-[![Python - Types](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml)
+[![Lint](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-lint.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-lint.yml)
+[![Test](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml)
+[![Types](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml)
 [![codecov](https://codecov.io/gh/dan1229/django_dans_waitlist/branch/main/graph/badge.svg?token=TL09HDQWBJ)](https://codecov.io/gh/dan1229/django_dans_waitlist)
 
 ## Description
