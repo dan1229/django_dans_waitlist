@@ -116,6 +116,7 @@ class WaitlistEntryEmailViewSet(viewsets.GenericViewSet):
         if team_name and context:
             if "team_name" not in context:
                 context["team_name"] = settings.TEAM_NAME
+
         # send email
         notification_email = NotificationEmail.objects.send_email(
             subject=subject,
