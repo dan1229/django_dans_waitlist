@@ -1,4 +1,4 @@
-from .base import BaseSerializer
+from django_dans_api_toolkit.serializers.base import BaseSerializer
 from ..models import WaitlistEntry
 
 
