@@ -37,14 +37,9 @@
 
 #### python 3.12 support and django 5.0
 - idk try adding again
-
-
-#### revisit requirements in setup.cfg
-- django dans cant install in ci?
-- is there a bigger issue with the way i handle deps?
-    - update django dans notifications if so
-
-
+-
+- revisit requirements in setup.cfg
+    - djangs
 ### [1.0.0] - 2024-MM-DD
 - Added support for Python 3.12 and Django 5.0
 #### TODO
