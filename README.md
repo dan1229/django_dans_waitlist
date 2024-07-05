@@ -1,9 +1,19 @@
 # Django Dans Waitlist
 
+
 [![Lint](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-lint.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-lint.yml)
 [![Test](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-test.yml)
 [![Types](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml)
 [![codecov](https://codecov.io/gh/dan1229/django_dans_waitlist/branch/main/graph/badge.svg?token=TL09HDQWBJ)](https://codecov.io/gh/dan1229/django_dans_waitlist)
+
+[![Python Versions](https://img.shields.io/pypi/pyversions/django-dans-waitlist.svg?color=3776AB&logo=python&logoColor=white)](https://www.python.org/)
+[![Django Versions](https://img.shields.io/pypi/djversions/django-dans-waitlist?color=0C4B33&logo=django&logoColor=white&label=django)](https://www.djangoproject.com/)
+[![PyPI Version](https://img.shields.io/pypi/v/django-dans-waitlist.svg?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/django-dans-waitlist/)
+[![Downloads](https://static.pepy.tech/badge/django-dans-waitlist/month)](https://pepy.tech/project/django-dans-waitlist)
+[![GitHub stars](https://img.shields.io/github/stars/dan1229/django-dans-waitlist?logo=github&style=flat)](https://github.com/dan1229/django-dans-waitlist/stargazers)
+[![License](https://img.shields.io/pypi/l/django-dans-waitlist.svg?color=blue)](https://github.com/dan1229/django-dans-waitlist/blob/main/LICENSE.txt)
+[![Codacy grade](https://img.shields.io/codacy/grade/21cb657283c04e70b56fb935277a1ad1?logo=codacy)](https://www.codacy.com/app/dan1229/django-dans-waitlist)
+[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg?logo=python&logoColor=black)](https://github.com/psf/black)
 
 ## Description
 
@@ -68,7 +78,6 @@ Add these to your `settings.py` file to customize the app's behavior like so:
 ```python
 TEAM_NAME = "My Team"
 ```
-
 
 
 ## Docs
