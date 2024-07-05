@@ -27,6 +27,7 @@
 #### add type support / stubs
 - add mypy
 - add ci stage to check for types?
+    - rename other one to 'python - test'
 - update docs
 
 

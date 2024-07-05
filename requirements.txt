@@ -2,4 +2,3 @@ Django==5.0
 djangorestframework==3.14.0
 django-dans-notifications==1.1.18
 django-dans-api-toolkit==1.0.0
-coverage==6.4
