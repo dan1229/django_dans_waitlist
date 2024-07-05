@@ -5,6 +5,11 @@
 [![Types](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml/badge.svg)](https://github.com/dan1229/django_dans_waitlist/actions/workflows/python-types.yml)
 [![codecov](https://codecov.io/gh/dan1229/django_dans_waitlist/branch/main/graph/badge.svg?token=TL09HDQWBJ)](https://codecov.io/gh/dan1229/django_dans_waitlist)
 
+
+[![Python Versions](https://img.shields.io/pypi/pyversions/django-dans-waitlist)](https://pypi.org/project/django-dans-waitlist/)
+[![Django Versions](https://img.shields.io/pypi/djversions/django-dans-waitlist)](https://pypi.org/project/django-dans-waitlist/)
+[![PyPI Version](https://img.shields.io/pypi/v/django-dans-waitlist)](https://pypi.org/project/django-dans-waitlist/)
+
 ## Description
 
 A Django app to handle waitlist and basic functionality.
@@ -68,7 +73,6 @@ Add these to your `settings.py` file to customize the app's behavior like so:
 ```python
 TEAM_NAME = "My Team"
 ```
-
 
 
 ## Docs
