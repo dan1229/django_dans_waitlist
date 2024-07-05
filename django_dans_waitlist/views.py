@@ -36,11 +36,15 @@ class WaitlistEntryViewSet(viewsets.GenericViewSet):
         """
         email = request.data.get("email", None)
         if email is None:
-            return self.response_handler.response_error(message="Email is required.")
+            return self.response_handler.response_error(
+                message="Email is required.",
+                error_fields={"email": ["Invalid email format."]},
+            )
         if not re.match(REGEX_EMAIL, email):
             if email == "":
                 return self.response_handler.response_error(
-                    message="'Email' cannot be blank."
+                    message="'Email' cannot be blank.",
+                    error_fields={"email": ["Invalid email format."]},
                 )
             return self.response_handler.response_error(
                 error_fields={"email": ["Invalid email format."]}
