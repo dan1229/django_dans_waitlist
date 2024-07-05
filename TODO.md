@@ -7,13 +7,10 @@
 ### Improvements
 
 
-#### python 3.12 support
-- idk try adding again
-
-
 
 -----
-### 0.1.0
+### 1.0.0
+
 
 
 #### improve types?
@@ -38,6 +35,9 @@
     - TODO
 
 
+#### python 3.12 support and django 5.0
+- idk try adding again
+
 
 #### revisit requirements in setup.cfg
 - django dans cant install in ci?
@@ -45,7 +45,7 @@
     - update django dans notifications if so
 
 
-### [0.1.0] - 2024-MM-DD
+### [1.0.0] - 2024-MM-DD
 - NOTE THIS IS THE VERSION CURRENTLY IN SETUP.CFG
 #### TODO
 
