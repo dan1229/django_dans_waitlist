@@ -15,18 +15,13 @@
 
 #### improve docs
 - improve readme
+    - add mypy notes and badge
 - revisit other docs
 - more badges
     - python/django versions
     - https://pypi.org/project/django-admin-interface/
         - more inspo
-    - add to django dans notifications
-
-
-    
-#### add type support / stubs
-- add mypy
-- update docs
+    - mypy
 
 
 
@@ -40,7 +35,6 @@
     - Allowed for lots of code clean up!
 - Added type stubs and support
     - CI checks for types
-#### TODO
 
 -------------------------------------------------------
 
