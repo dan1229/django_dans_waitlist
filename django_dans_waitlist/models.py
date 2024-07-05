@@ -1,5 +1,5 @@
 import uuid
-from typing import Any, List
+from typing import List
 from django.db import models
 
 """

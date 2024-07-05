@@ -35,6 +35,9 @@
     - Allowed for lots of code clean up!
 - Added type stubs and support
     - CI checks for types
+- General CI clean up
+- General docs clean up
+    - More badges!
 
 -------------------------------------------------------
 
