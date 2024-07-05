@@ -47,6 +47,8 @@
 ### [1.0.0] - 2024-07-DD
 - Added support for Python 3.12 and Django 5.0
     - Updated CI as well
+- Improved tests!
+    - Coverage at TODO%
 #### TODO
 
 -------------------------------------------------------
