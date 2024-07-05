@@ -51,9 +51,6 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         email = "invalidemail"
         form_data = {"email": email}
 
-        # create waitlist entry
-        WaitlistEntry.objects.create(email=email)
-
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
         response = self.view_create(request)
@@ -80,5 +77,42 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         json_response = json.loads(response.content)
 
         # confirm status code and data
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 201)
         self.assertEqual(json_response["message"], "Added to the waitlist.")
+        self.assertEqual(json_response["results"]["email"], email)
+
+    def test_create_waitlist_entry_missing_email(self) -> None:
+        # parameters
+        form_data = {}
+
+        # make api request
+        request = self.factory.post(self.get_url(), data=form_data)
+        response = self.view_create(request)
+        response.render()
+        json_response = json.loads(response.content)
+
+        # confirm status code and data
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(
+            json_response["error_fields"]["email"][0],
+            "This field is required.",
+        )
+        self.assertEqual(json_response["message"], "Error. Please try again later.")
+
+    def test_create_waitlist_entry_empty_email(self) -> None:
+        # parameters
+        form_data = {"email": ""}
+
+        # make api request
+        request = self.factory.post(self.get_url(), data=form_data)
+        response = self.view_create(request)
+        response.render()
+        json_response = json.loads(response.content)
+
+        # confirm status code and data
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(
+            json_response["error_fields"]["email"][0],
+            "This field may not be blank.",
+        )
+        self.assertEqual(json_response["message"], "Error. Please try again later.")

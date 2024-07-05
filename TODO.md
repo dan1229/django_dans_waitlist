@@ -13,14 +13,6 @@
 
 
 
-#### improve types?
-- add mypy?
-- add ci stage to check for types?
-- do same for django dans notifications?
-- typed
-
-
-
 #### improve docs
 - improve readme
 - revisit other docs
@@ -32,16 +24,19 @@
 
 
     
+#### improve types?
+- add mypy?
+- add ci stage to check for types?
+- do same for django dans notifications?
+- typed
+
+
+
 #### django dans api toolkit
 - add dep for it
 - remove local code
 
 
-#### improve tests
--  model tests
-    - TODO
-- api tests
-    - TODO
 
 
 ### [1.0.0] - 2024-07-DD
