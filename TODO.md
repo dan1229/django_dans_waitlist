@@ -31,14 +31,6 @@
     - add to django dans notifications
 
 
-
-#### improve tests
--  model tests
-    - TODO
-- api tests
-    - TODO
-
-
     
 #### django dans api toolkit
 - add dep for it
@@ -47,7 +39,12 @@
 
 
 
-#### python 3.12 support and django 5.0
+
+#### improve tests
+-  model tests
+    - TODO
+- api tests
+    - TODO
 
 
 ### [1.0.0] - 2024-MM-DD
