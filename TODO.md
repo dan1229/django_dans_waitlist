@@ -7,6 +7,10 @@
 ### Improvements
 
 
+#### email all functionality?
+- too powerful?
+
+
 
 -----
 ### 1.0.0
