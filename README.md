@@ -21,6 +21,8 @@ A Django app to handle waitlist and basic functionality.
 
 Support for `Waitlist` and `WaitlistEntry` models, as well as a `WaitlistManager` to handle common operations.
 
+[Available on PyPi](https://pypi.org/project/django-dans-waitlist/)
+
 ## Quick start
 
 1. Install the package via pip:
