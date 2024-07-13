@@ -49,7 +49,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     - TESTS TESTS TESTS!!!
 - Python 3.10 or 3.11, Django >= 3.1, < 5.0
 
-
 -------------------------------------------------------
 
 ##### [https://danielnazarian.com](https://danielnazarian.com)
