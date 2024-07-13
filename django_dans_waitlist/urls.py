@@ -3,12 +3,12 @@
 #
 #  Please do NOT use, edit, distribute, or otherwise use this code without consent.
 #  For questions, comments, concerns, and more -> dnaz@danielnazarian.com
+
 from rest_framework.routers import DefaultRouter
 from .views import (
     WaitlistEntryEmailViewSet,
     WaitlistEntryViewSet,
 )
-
 
 """
 # =================================================================================================== #
@@ -18,6 +18,6 @@ from .views import (
 
 # Create a router and register our view sets with it
 router = DefaultRouter()
-router.register(r"entries", WaitlistEntryViewSet)
-router.register(r"entries/emails", WaitlistEntryEmailViewSet)
+router.register(r"entries", WaitlistEntryViewSet, basename='waitlist-entry')
+router.register(r"entries/emails", WaitlistEntryEmailViewSet, basename='waitlist-entry-email')
 urlpatterns = router.urls
