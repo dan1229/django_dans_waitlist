@@ -3,7 +3,7 @@ from ..base import BaseAPITestCase
 from ....views import WaitlistEntryEmailViewSet
 from ....models import WaitlistEntry
 from django.contrib.auth import get_user_model
-from django_dans_notifications.models.email import NotificationEmail
+from django_dans_notifications.models.notifications import NotificationEmail
 
 """
 # =============================================================================================

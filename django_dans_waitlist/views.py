@@ -10,7 +10,7 @@ from .permissions import AdminOnly
 from .regex import REGEX_EMAIL
 from .models import WaitlistEntry
 from django.conf import settings
-from django_dans_notifications.models.email import NotificationEmail
+from django_dans_notifications.models.notifications import NotificationEmail
 from rest_framework import status
 import re
 from django_dans_api_toolkit.api_response_handler import ApiResponseHandler
