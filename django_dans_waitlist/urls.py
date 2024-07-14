@@ -20,6 +20,6 @@ from .views import (
 router = DefaultRouter()
 router.register(r"entries", WaitlistEntryViewSet, basename="waitlist-entry")
 router.register(
-    r"entries/emails", WaitlistEntryEmailViewSet, basename='waitlist-entry-email'
+    r"entries/emails", WaitlistEntryEmailViewSet, basename="waitlist-entry-email"
 )
 urlpatterns = router.urls
