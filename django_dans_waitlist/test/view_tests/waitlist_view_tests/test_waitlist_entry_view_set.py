@@ -25,13 +25,13 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
     # CREATE ===========================================================================
     # ==================================================================================
 
-    def test_create_waitlist_entry_invalid_already_exists(self) -> None:
+    def test_create_waitlist_entry_duplicate_email_idempotent(self) -> None:
         # parameters
         email = "waitlistentry@example.com"
         form_data = {"email": email}
 
         # create waitlist entry
-        WaitlistEntry.objects.create(email=email)
+        existing = WaitlistEntry.objects.create(email=email)
 
         # make api request
         request = self.factory.post(self.get_url(), data=form_data)
@@ -40,12 +40,14 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
         json_response = json.loads(response.content)
 
         # confirm status code and data
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, 200)
         self.assertEqual(
-            json_response["error_fields"]["email"][0],
-            "Waitlist Entry with this email already exists.",
+            json_response["message"],
+            "You're already on the list — we'll be in touch.",
         )
-        self.assertEqual(json_response["message"], "Error adding to the waitlist.")
+        self.assertEqual(json_response["results"]["email"], email)
+        self.assertEqual(str(json_response["results"]["id"]), str(existing.id))
+        self.assertEqual(WaitlistEntry.objects.filter(email=email).count(), 1)
 
     def test_create_waitlist_entry_invalid_email(self) -> None:
         # parameters
@@ -69,6 +71,38 @@ class TestWaitlistEntryViewSet(BaseAPITestCase):
     def test_create_waitlist_entry_valid(self) -> None:
         # parameters
         email = "waitlistentry@example.com"
+        form_data = {"email": email}
+
+        # make api request
+        request = self.factory.post(self.get_url(), data=form_data)
+        response = self.view_create(request)
+        response.render()  # type: ignore[attr-defined]
+        json_response = json.loads(response.content)
+
+        # confirm status code and data
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(json_response["message"], "Added to the waitlist.")
+        self.assertEqual(json_response["results"]["email"], email)
+
+    def test_create_waitlist_entry_plus_address_valid(self) -> None:
+        # parameters
+        email = "user+tag@example.com"
+        form_data = {"email": email}
+
+        # make api request
+        request = self.factory.post(self.get_url(), data=form_data)
+        response = self.view_create(request)
+        response.render()  # type: ignore[attr-defined]
+        json_response = json.loads(response.content)
+
+        # confirm status code and data
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(json_response["message"], "Added to the waitlist.")
+        self.assertEqual(json_response["results"]["email"], email)
+
+    def test_create_waitlist_entry_dot_and_dash_valid(self) -> None:
+        # parameters
+        email = "first.last-name@example.com"
         form_data = {"email": email}
 
         # make api request

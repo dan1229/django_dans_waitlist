@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Released]
 
+### [1.1.0] - 2026-05-12
+- Fixed `REGEX_EMAIL` rejecting `+` in the local part — plus-addressed emails (e.g. `me+preon@gmail.com`) are now accepted
+- Made `WaitlistEntryViewSet.create` idempotent for duplicate emails — returns 200 with the existing entry as `results` and a friendly "You're already on the list — we'll be in touch." message instead of 400
+- Tests updated and renamed (`test_create_waitlist_entry_invalid_already_exists` → `test_create_waitlist_entry_duplicate_email_idempotent`); added plus-address and dot/dash coverage
+
+
 ### [1.0.3] - 2024-07-14
 - Fixed `Django Dan's Notifications` imports
 - Updated package dependencies a bit

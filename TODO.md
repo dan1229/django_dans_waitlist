@@ -17,17 +17,6 @@
 #### integrations with hubspot or something?
 
 
------
-### 1.1.0
-
-
-#### email all functionality?
-- too powerful?
-
-
-### [1.1.0] - 2024-MM-DD
-- TODO
-
 -------------------------------------------------------
 
 ##### Copyright 2024 © Daniel Nazarian.

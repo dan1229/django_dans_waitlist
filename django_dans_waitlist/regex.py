@@ -3,4 +3,4 @@
 #
 
 # Regular expression pattern for email validation
-REGEX_EMAIL = r"^[\w\.-]+@[\w\.-]+\.\w+$"
+REGEX_EMAIL = r"^[\w.+-]+@[\w.-]+\.\w+$"

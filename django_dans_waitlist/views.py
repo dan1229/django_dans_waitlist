@@ -55,6 +55,14 @@ class WaitlistEntryViewSet(viewsets.GenericViewSet):
                 error_fields=error_fields,
             )
 
+        existing = WaitlistEntry.objects.filter(email=email).first()
+        if existing is not None:
+            return self.response_handler.response_success(
+                message="You're already on the list — we'll be in touch.",
+                results=self.serializer_class(existing).data,
+                status=200,
+            )
+
         try:
             serializer = self.serializer_class(data=request.data)
             serializer.is_valid(raise_exception=True)
